@@ -43,7 +43,7 @@
 
 .summary::after {
   background-image: url('../public/github2.jpg');
-  animation-delay: 5s; /* 画像の切り替えタイミングを調整 */
+  animation-delay: 4s; /* 画像の切り替えタイミングを調整 */
 }
 
 .summary-item {
