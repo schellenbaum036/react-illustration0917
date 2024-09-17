@@ -69,3 +69,13 @@
   }
 
 }
+@media (max-width: 458px) {
+  .summary-item {
+    width: 90% !important; /* Full width for smaller screens */
+  }
+
+  .title{
+    font-size: 20px;
+  }
+
+}
