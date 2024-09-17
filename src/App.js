@@ -14,7 +14,7 @@ const App = () => {
           </div>
           <div className="summary-item">
             <h2 className="red">学び</h2>
-            <p>CodeCopilotというAIが存在します。実は新しいものではなく、GitHubにてもともと提供されていた有料サービスです。</p>
+            <p>CodeCopilotというAIが存在<br/>GitHubにてもともと提供されていた有料サービス</p>
           </div>
           <div className="summary-item">
             <h2 className="cyan">次にやること</h2>
@@ -22,7 +22,7 @@ const App = () => {
           </div>
           <div className="summary-item">
             <h2 className="pink">babubabu</h2>
-            <p>9月もあっという間に過ぎていきますね！ついこの前9月になったと思ったばかりなのに…💦</p>
+            <p>9月もあっという間！<br/>この前9月になったばかりなのに…💦</p>
           </div>
         </div>
         <div className="report">
