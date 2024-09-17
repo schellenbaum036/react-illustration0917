@@ -16,7 +16,7 @@
 .summary {
   position: relative;
   width: 80%;
-  height: 300px; /* 適切な高さを設定 */
+  min-height: 80vh; /* 適切な高さを設定 */
   overflow: hidden;
   display: flex;
   flex-wrap: wrap;
@@ -38,11 +38,11 @@
 }
 
 .summary::before {
-  background-image: url('/github1.jpg');
+  background-image: url('../public/github1.jpg');
 }
 
 .summary::after {
-  background-image: url('/github2.jpg');
+  background-image: url('../public/github2.jpg');
   animation-delay: 5s; /* 画像の切り替えタイミングを調整 */
 }
 
