@@ -5,7 +5,7 @@ const App = () => {
   return (
     <div className="App">
       <header className="App-header">
-        <h1>9/17 知らないだけで実は当たり前？！AIで開発👀</h1>
+        <h1 className='title'>9/17 AIで開発、実は当たり前？！</h1>
         <div className="summary">
           <div className="summary-item">
             <h2 className="blue">できた</h2>
