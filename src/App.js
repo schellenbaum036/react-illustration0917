@@ -18,7 +18,7 @@ const App = () => {
           </div>
           <div className="summary-item">
             <h2 className="cyan">次にやること</h2>
-            <p>JavaでもCodeCopilot使えるとの噂あり👀試したい…</p>
+            <p>JavaでもCodeCopilot使えるとの噂あり👀<br/>試したい…</p>
           </div>
           <div className="summary-item">
             <h2 className="pink">babubabu</h2>
