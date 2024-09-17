@@ -1,3 +1,5 @@
+
+
 .App-header {
   background-color: #282c34;
   min-height: 100vh;
@@ -8,7 +10,6 @@
   font-size: calc(10px + 2vmin);
   color: white;
 }
-
 .summary {
   display: flex;
   flex-wrap: wrap;
@@ -16,7 +17,6 @@
   margin-bottom: 20px;
   width: 80%; /* Adjust width to match the report section */
 }
-
 .summary-item {
   background: #fff;
   color: #000;
@@ -25,9 +25,7 @@
   padding: 20px;
   width: calc(50% - 20px); /* Two columns with margin */
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  animation: bounce 2s infinite, rotate 5s infinite;
 }
-
 .report {
   background: #fff;
   color: #000;
@@ -36,49 +34,23 @@
   width: 80%;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
-
 @media (max-width: 768px) {
   .summary-item {
     width: 90%; /* Full width for smaller screens */
   }
 }
-
-@keyframes bounce {
-  0%, 20%, 50%, 80%, 100% {
-    transform: translateY(0);
-  }
-  40% {
-    transform: translateY(-30px);
-  }
-  60% {
-    transform: translateY(-15px);
-  }
-}
-
-@keyframes rotate {
-  0% {
-    transform: rotate(0deg);
-  }
-  100% {
-    transform: rotate(360deg);
-  }
-}
-
 .blue {
   color: blue;
   font-weight: bold;
 }
-
 .red {
   color: red;
   font-weight: bold;
 }
-
 .cyan {
   color: darkcyan;
   font-weight: bold;
 }
-
 .pink {
   color: pink;
   font-weight: bold;
