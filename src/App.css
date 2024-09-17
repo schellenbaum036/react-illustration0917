@@ -38,11 +38,11 @@
 }
 
 .summary::before {
-  background-image: url('/path/to/your/image1.jpg');
+  background-image: url('/github1.jpg');
 }
 
 .summary::after {
-  background-image: url('/path/to/your/image2.jpg');
+  background-image: url('/github2.jpg');
   animation-delay: 5s; /* 画像の切り替えタイミングを調整 */
 }
 
