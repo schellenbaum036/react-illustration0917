@@ -21,7 +21,7 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  margin-bottom: 20px;
+  margin-bottom: 50px;
 }
 
 .summary::before,
@@ -77,6 +77,7 @@
   color: #000;
   border-radius: 10px;
   padding: 20px;
+  margin-bottom: 50px;
   width: 80%;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
