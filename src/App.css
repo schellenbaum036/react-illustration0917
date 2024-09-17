@@ -8,29 +8,52 @@
   font-size: calc(10px + 2vmin);
   color: white;
 }
-.title{
+
+.title {
   font-size: 36px;
 }
+
 .summary {
+  position: relative;
+  width: 80%;
+  height: 300px; /* 適切な高さを設定 */
+  overflow: hidden;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  margin-bottom: 50px;
-  width: 80%; /* Adjust width to match the report section */
-  min-height: 80vh;
+  margin-bottom: 20px;
 }
+
+.summary::before,
+.summary::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  animation: crossfade 10s infinite;
+}
+
+.summary::before {
+  background-image: url('/path/to/your/image1.jpg');
+}
+
+.summary::after {
+  background-image: url('/path/to/your/image2.jpg');
+  animation-delay: 5s; /* 画像の切り替えタイミングを調整 */
+}
+
 .summary-item {
-  background: #fff;
+  background: rgba(255, 255, 255, 0.8); /* 背景画像が見えるように透明度を設定 */
   color: #000;
   border-radius: 10px;
   margin: 10px;
   padding: 20px;
   width: 40%;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-
-.summary-item h2 {
-  margin: 0;
 }
 
 .summary-item:nth-child(1) {
@@ -54,39 +77,44 @@
   color: #000;
   border-radius: 10px;
   padding: 20px;
-  margin-bottom: 50px;
   width: 80%;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
+
 .blue {
   color: blue;
   font-weight: bold;
 }
+
 .red {
   color: red;
   font-weight: bold;
 }
+
 .cyan {
   color: darkcyan;
   font-weight: bold;
 }
+
 .pink {
   color: pink;
   font-weight: bold;
 }
+
 @media (max-width: 768px) {
   .summary-item {
     width: 90% !important; /* Full width for smaller screens */
   }
-  .title{
+  .title {
     font-size: 32px;
   }
 }
+
 @media (max-width: 458px) {
   .summary-item {
     width: 90% !important; /* Full width for smaller screens */
   }
-  .title{
+  .title {
     font-size: 20px;
   }
 }
@@ -136,5 +164,20 @@
   }
   100% {
     transform: rotate(0deg);
+  }
+}
+
+@keyframes crossfade {
+  0% {
+    opacity: 1;
+  }
+  33% {
+    opacity: 0;
+  }
+  66% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
   }
 }
